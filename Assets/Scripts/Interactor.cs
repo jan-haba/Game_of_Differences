@@ -94,7 +94,8 @@ public class Interactor : MonoBehaviour
             }
             else
             {
-                Debug.Log("Chybné kliknutí! -1 bod");
+                if (GameManager.Instance != null)
+                    GameManager.Instance.SubtractScore();
             }
         }
     }

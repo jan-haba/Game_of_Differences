@@ -58,7 +58,9 @@ public class DifferenceObject : MonoBehaviour, IInteractable
                 break;
         }
 
-        Debug.Log("Rozdíl opraven: " + gameObject.name);
+        Debug.Log("Difference fixed: " + gameObject.name);
+        if (GameManager.Instance != null)
+            GameManager.Instance.AddScore();
     }
     private void SetLayerRecursively(GameObject obj, int newLayer)
     {
