@@ -6,6 +6,6 @@ public class WinningScreenManager : MonoBehaviour
     public void BackToMainMenu()
     {
         Time.timeScale = 1f; 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
